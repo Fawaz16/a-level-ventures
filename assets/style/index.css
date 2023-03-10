@@ -9,6 +9,7 @@
   --primary-color: #ed008e;
   --light-color: white;
   --header-bg-color: rgba(225, 225, 225, 0);
+  --dark-color: black;
 }
 
 a {
@@ -20,7 +21,7 @@ a {
 }
 
 .navbar .navbar-nav .nav-link {
-  color: var(--light-color);
+  color: var(--dark-color);
   font-weight: 500;
   text-decoration: none;
 }
