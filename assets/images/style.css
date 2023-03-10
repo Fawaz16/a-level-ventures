@@ -4,15 +4,8 @@
     list-style: none;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
-
 }
 
-nav{
-    position: fixed;
-    top: 0;
-    bottom: 0;
-
-}
 .first{
 background: url(https://images.ctfassets.net/ao073xfdpkqn/5pNFR1PZXz1ihYVw3WQrg2/cd1ad5dbef39b75f4ab3ebcd4bc7f9d4/dark-colorful-booklets-2400x1600.jpg?w=1200&h=800&fm=avif);
  background-repeat: no-repeat;
@@ -41,9 +34,6 @@ border-bottom-right-radius: 100px;
     border: none;
     cursor: pointer;
 
-}
-nav{
-    z-index: 20;
 }
 
 .first button:hover{

@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat, sans-serif;
+}
+
+:root{
+    --primary-color: #ed008e;
+    --light-color: white;
+    --header-bg-color: rgba(255,255,255,0.1);
+}
+
+.navbar{
+    background-color: var(--header-bg-color);
+}
+
+.navbar-nav .nav-item .nav-link{
+    color: var(--primary-color);
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.service-nav, .contact-nav{
+    background-color: var(--primary-color);
+    padding: 10px;
+    color: var(--light-color);
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.menu-icon{
+    color: var(--primary-color);
+}
