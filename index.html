@@ -6,15 +6,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>A vetures printing.com</title>
-  <link rel="stylesheet" href="./assets/style/index.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
-    integrity="sha384-xeJqLiuOvjUBq3iGOjvSQSIlwrpqjSHXpduPd6rQpuiM3f5/ijby8pCsnbu5S81n" crossorigin="anonymous" />
+  integrity="sha384-xeJqLiuOvjUBq3iGOjvSQSIlwrpqjSHXpduPd6rQpuiM3f5/ijby8pCsnbu5S81n" crossorigin="anonymous" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <!--Remix Icon-->
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/style/index.css">
 
   <!--Importing Montserat Font from google font. 300, 400, 500, 600, 800-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,6 +22,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;800&display=swap"
     rel="stylesheet">
 
+    <script defer src="./assets/js/index.js"></script>
 <body>
   <!--Nav Bar-->
   <nav class="navbar navbar-expand-lg">
@@ -29,7 +30,8 @@
       <header class="overflow-hidden d-flex justify-content-center align-items-center flex-grow-1 flex-lg-grow-0">
         <img src="./assets/images/1678299856452.jpg" alt="">
       </header>
-      <div class="onsmall-device d-flex flex-row justify-content-around align-items-center flex-grow-1 py-2 d-lg-none flex-wrap">
+      <div
+        class="onsmall-device d-flex flex-row justify-content-around align-items-center flex-grow-1 py-2 d-lg-none flex-wrap">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
           <span class="ri-menu-line fs-2 custom-icon menu-icon"></span>
         </button>
@@ -66,15 +68,48 @@
   </nav>
 
   <main class="container-fluid overflow-hidden">
-    <div class="container-fluid first p-5 text-center">
-      <div class=" second">
-        <h2 class="h2 text-center fw-bold  pt-5 text-light text-capitalize" style="font-size: 40px;"><span
-            style="color: rgb(75, 75, 255);">ENERGY</span> IN THE PRESSROOM</h2>
-        <p class="pt-5 pb-5 text-light">We are into marketing,Printing and Branding.
-          We have been in operation for almost two decades with track record of performance</p>
-        <button class="btn-lg bg-primary "><a href="" style="color: aliceblue; text-decoration: none;">Read
-            more</a></button>
+
+    <!-- Entry Board Carousel-->
+    <div id="entryBoard" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <div class="d-flex flex-column justify-content-center w-100 carouselContentContainer" id="firstCarousel">
+            <span class="fs-4 d-block text-light customAnimation">The small company with </span>
+            <span class="display-3 d-block text-light fw-bold mb-3 customAnimation">Big Ideas</span>
+            <div>
+              <button class="btn entry-board-btn px-5 py-3 text-light mt-3 customAnimation">GET IN TOUCH</button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <div class="d-flex flex-column justify-content-center w-100 carouselContentContainer" id="secondCarousel">
+            <span class="fs-4 d-block text-light mb-4 customAnimation">Welcome to The London Printing Company</span>
+            <span class="display-3 d-block text-light fw-bold mb-3 customAnimation">Printing made easy…</span>
+            <span class="fs-4 d-block text-light customAnimation">Give us a call, we'll be happy to help</span>
+            <div>
+              <button class="btn entry-board-btn px-5 py-3 text-light mt-3 customAnimation">GET IN TOUCH</button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="d-flex flex-column justify-content-center w-100 carouselContentContainer" id="thirdCarousel">
+            <span class="fs-4 d-block text-light customAnimation">The small company with </span>
+            <span class="display-3 d-block text-light fw-bold mb-3 customAnimation">Big Ideas</span>
+            <div>
+              <button class="btn entry-board-btn px-5 py-3 text-light mt-3 customAnimation">GET IN TOUCH</button>
+            </div>
+          </div>
+          </div>
+        </div>
       </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#entryBoard" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#entryBoard" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
 
     <div class="container-fluid  third">
@@ -177,6 +212,7 @@
       </div>
 
     </div>
+
   </main>
 
 
