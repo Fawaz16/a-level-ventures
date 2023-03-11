@@ -89,9 +89,15 @@ a {
 }
 
 .entry-board-btn{
+    position: relative;
     width: 25vw;
     background-color: var(--primary-color);
     border-color: var(--light-color);
+}
+
+.carousel-btn{
+    position: absolute;
+    height: 500px;
 }
 
 @media (max-width: 992px) {
