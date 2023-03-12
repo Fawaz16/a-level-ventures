@@ -11,18 +11,25 @@ const observer = new IntersectionObserver((entries) => {
 const hiddenElements = document.querySelectorAll(".customAnimation");
 hiddenElements.forEach((el) => observer.observe(el));
 
-window.addEventListener("DOMContentLoaded", () => {
+function resizeCarouselBtn() {
     const navbar = document.getElementsByClassName("navbar")[0];
     const carouselBtn = document.getElementsByClassName("carousel-btn");
-    for(let btn of carouselBtn){
+    for (let btn of carouselBtn) {
         btn.style.top = navbar.offsetHeight + "px";
     }
-})
+}
+
+window.addEventListener("DOMContentLoaded", () => {
+    resizeCarouselBtn()
+});
 
 window.onresize = () => {
-    const navbar = document.getElementsByClassName("navbar")[0];
-    const carouselBtn = document.getElementsByClassName("carousel-btn");
-    for(let btn of carouselBtn){
-        btn.style.top = navbar.offsetHeight + "px";
-    }
+    resizeCarouselBtn()
+}
+
+const navbarToggler = document.getElementsByClassName("navbar-toggler")[0];
+navbarToggler.onclick = () => {
+    setTimeout(() => {
+        resizeCarouselBtn()
+    }, 300)
 }
