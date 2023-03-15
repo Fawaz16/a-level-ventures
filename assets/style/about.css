@@ -3,31 +3,20 @@
 .fifth img{
     width: 100%;
 }
-.fifth:before{
-    content: '';
-    position: absolute;
-    width: 60%;
-    height: 45px;
-    top: 840px;
-    left: 0;
-    /* border-top-right-radius: 250px; */
-    background-color: rgb(255, 255, 255);
-    transform: skewY(10deg);
-}
 
 .fifth:after{
-    content: '';
+    /* content: '';
     position: absolute;
     width: 60%;
     height: 45px;
     top: 840px;
     right: 0 ;
-    left: 0;
+    left: 0; */
     /* border-top-right-radius: 250px; */
-    background-color: rgb(255, 255, 255);
-    transform: skewY(10deg);
+    /* background-color: rgb(255, 255, 255);
+    transform: skewY(10deg); */
 }
-
+/* 
 .fifth:before{
     content: '';
     position: absolute;
@@ -38,10 +27,47 @@
     border-top-right-radius: 250px;
     background-color: rgb(255, 255, 255);
     transform: skewY(10deg);
+} */
+
+.eight ol{
+    padding-top: 20px;
 }
+.eight ol li{
+    padding-bottom: 10px;
+}
+.tall{
+    background-color: linear-gradient(90deg, rgba(136,136,136,1) 0%, rgba(70,69,69,1) 4%, rgba(70,69,69,1) 8%, rgba(63,62,62,1) 33%, rgba(63,62,62,1) 95%);
+}
+@media(max-width:768px){
+    .eleventh img{
+        width: 5%;
+    }
+
+    .twelve{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding-top: 30px;
+    }
+    .twelve img{
+        width: 20%;
+        object-fit: contain;
+    }
+    .tall{
+        margin-bottom: 20px;
+    }
+    .short{
+        margin-bottom: 20px;
+    }
+}
+
 @media(min-width:768px){
     .fifth img{
         width: 100%;
+    }
+    .tenth{
+        max-width: 700px;
+        margin: 0 auto;
     }
     .fifth p{
         font-size: 15px;
@@ -51,4 +77,58 @@
     .seventh{
         margin-top: 90px;
     }
+    .eight{
+        max-width: 700px;
+        margin: 0 auto;
+    }
+    .eleventh{
+        max-width: 900px;
+        margin: 0 auto;
+        padding-top: 50px;
+    }
+    .twelve{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .twelve img{
+        width: 20%;
+        object-fit: contain;
+    }
+    .thirteen img{
+        width: 100%;
+        object-fit: contain;
+        padding-right: 80px;
+        
+    }
+    .thirteen p{
+        width: 90%;
+        padding-left: 70px;
+      
+    }
+    .thirteen h2{
+        padding-left: 70px;
+    }
+    .fourteen p{
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    .tall{
+        height: 450px;
+        font-size: 27px;
+    }
+    .short{
+        height: 300px;
+        font-size: 27px;
+    }
+    .drop{
+        position: relative;
+        top: 100px; 
+        
+    }
+    .drop-2{
+        position: relative;
+        top: 30px;
+    }
+    
 }
