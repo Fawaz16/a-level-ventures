@@ -77,6 +77,11 @@
     .seventh{
         margin-top: 90px;
     }
+    .seventh p{
+        width: 80%;
+        position: relative;
+        left: 80px;
+    }
     .eight{
         max-width: 700px;
         margin: 0 auto;
@@ -96,7 +101,7 @@
         object-fit: contain;
     }
     .thirteen img{
-        width: 100%;
+        width: 50%;
         object-fit: contain;
         padding-right: 80px;
         
@@ -129,6 +134,9 @@
     .drop-2{
         position: relative;
         top: 30px;
+    }
+    .shift div{
+        margin-left: 160px;
     }
     
 }

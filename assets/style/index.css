@@ -180,7 +180,7 @@ a {
   color: rgb(87, 118, 255);
 }
 
-.third h3::after {
+/* .third h3::after {
   content: "";
   position: absolute;
   height: 3px;
@@ -189,7 +189,7 @@ a {
 
   background-color: rgb(87, 118, 255);
   width: 200px;
-}
+} */
 .card:hover {
   transform: scale(1.03);
   transition: 0.3s ease-in-out;
