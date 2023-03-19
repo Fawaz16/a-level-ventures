@@ -180,16 +180,18 @@ a {
   color: rgb(87, 118, 255);
 }
 
-/* .third h3::after {
-  content: "";
-  position: absolute;
-  height: 3px;
-  top: 800px;
-  right: 950px;
+button {
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  transition: background-color 0.2s ease;
+}
 
-  background-color: rgb(87, 118, 255);
-  width: 200px;
-} */
+
+
 .card:hover {
   transform: scale(1.03);
   transition: 0.3s ease-in-out;
